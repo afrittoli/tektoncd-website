@@ -1,0 +1,10 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+<div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Note</h4>
+    <p>See also the <b>{{ .Get "name" | safeHTML }}</b> interactive tutorial.</p>
+    <a href="https://katacoda.com/ncskier/scenarios/tekton-dashboard" target="_blank" rel="noopener" type="button">
+        <div class="btn btn-success" type="button">Launch Interactive Tutorial</div>
+    </a>
+    {{ partial "tutorial-modal.html" }}
+    </div>
+</div>

@@ -31,6 +31,9 @@ pygmentsStyle = "tango"
 [permalinks]
 blog = "/:section/:year/:month/:day/:slug/"
 
+[markup]
+defaultMarkdownHandler = "blackfriday"
+
 ## Configuration for BlackFriday markdown parser: https://github.com/russross/blackfriday
 [blackfriday]
 plainIDAnchors = true
@@ -47,14 +50,14 @@ anchor = "smart"
 [services]
 [services.googleAnalytics]
 # Comment out the next line to disable GA tracking. Also disables the feature described in [params.ui.feedback].
-id = "UA-00000000-0"
+id = "UA-154682132-1"
 
 # Language configuration
 
 [languages]
 [languages.en]
 title = "Tekton"
-description = "Kubernetes-native CI/CD"
+description = "Cloud Native CI/CD"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
@@ -62,8 +65,6 @@ weight = 1
 # Everything below this are Site Params
 
 [params]
-copyright = "The Tekton Project"
-privacy_policy = "https://www.linuxfoundation.org/privacy/"
 
 # First one is picked as the Twitter card image if not set on page.
 # images = ["images/project-illustration.png"]
@@ -73,13 +74,13 @@ privacy_policy = "https://www.linuxfoundation.org/privacy/"
 version_menu = "Releases"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/tektoncd/website/"
+github_repo = "https://github.com/tektoncd/website"
 
 # Specify a value here if your content directory is not in your repo's root directory
 # github_subdir = ""
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
-gcs_engine_id = "011737558837375720776:fsdu1nryfng"
+gcs_engine_id = "013756393218025596041:6eajntqsa6c"
 
 # User interface configuration
 [params.ui]

@@ -1,30 +1,43 @@
 # Developing the Tekton website
 
-- [Setting up your dev environment](#setup)
-- [Deploying changes](#deploying)
+- [Developing the Tekton website](#developing-the-tekton-website)
+- [Running Locally](#running-locally)
+- [tekton.dev](#tektondev)
 
-## Setup
+## Dependencies
 
-Before working on website issues, be sure to have the following installed:
+* [python3](https://www.python.org/downloads/) 
+* [hugo (EXTENDED VERSION)](https://github.com/gohugoio/hugo/releases)
+* [pip](https://pip.pypa.io/en/stable/installing/)
+* [npm v6.14.5](https://nodejs.org/en/)
+* [node v14.3.0](https://nodejs.org/en/)
+* [netlify cli](https://cli.netlify.com/getting-started)
+* [netlify account](https://app.netlify.com/)
 
-- [Yarn](https://yarnpkg.com/en/)
-- [Hugo](https://gohugo.io/)
+## Running Locally
 
-You can [use the `hugo` command](https://gohugo.io/getting-started/usage/)
-to interact with the site locally and see the results
-[before deploying](#deploying).
+Step 1
+```bash
+git clone https://github.com/tektoncd/website && cd website
+```
+Step 2
+```bash
+npm install
+```
+Step 3
+```bash
+pip install -r requirements.txt
+```
+Step 4
+```bash
+python3 sync/sync.py
+```
+Step 5
+```bash
+netlify dev
+```
 
-## Deploying
+## tekton.dev
 
-At the moment, deployments are done manually after a merge to master.
-Eventually we plan to move to [netlify](https://www.netlify.com/) (once we
-transfer ownership of the `tekton.dev` domain to the Linux Foundation),
-which would provide us with gitops based automation.
-
-- Currently we are hosting `tekton.dev` on [firebase](https://firebase.google.com/)
-- The `firebase` project is called `tekton`
-- [Members of the Tekton governing board](https://github.com/tektoncd/community/blob/master/governance.md)
-  and other Linux Foundation contributors have access to the firebase project
-
-Instructions for deploying Hugo based sites to Firebase:
-https://gohugo.io/hosting-and-deployment/hosting-on-firebase/
+- The latest website is available at [https://tekton.dev/](https://tekton.dev/).
+- The old website is available at [https://tekton-old.netlify.app/](https://tekton-old.netlify.app/) and based on the branch [website-old](https://github.com/tektoncd/website/tree/website-old).
