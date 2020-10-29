@@ -41,6 +41,7 @@ from ruamel.yaml import YAML
 
 FLAGS = flags.FLAGS
 
+# Some extra comment
 # Flag names are globally defined!  So in general, we need to be
 # careful to pick names that are unlikely to be used by other libraries.
 # If there is a conflict, we'll get an error at import time.
